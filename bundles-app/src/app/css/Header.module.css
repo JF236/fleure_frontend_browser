@@ -1,0 +1,56 @@
+.header {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 1622px;
+    gap: 20px;
+    padding: 0 20px;
+}
+.logo {
+    color: #000;
+    align-self: start;
+    flex-grow: 1;
+    font: 400 70px Darker Grotesque, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .logo {
+      font-size: 20px;
+    }
+  }
+  
+  .textbookTitle {
+    border-radius: 53px;
+    background-color: rgba(255, 255, 255, 0.71);
+    color: #000;
+    margin: auto 0;
+    padding: 21px 260px;
+    font: 400 20px Darker Grotesque, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .textbookTitle {
+      max-width: 100%;
+      padding: 50%;
+      margin-left: 0px;
+    }
+  }
+  
+  .avatarContainer {
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    padding: 0 7px;
+  }
+  
+  .avatarImage {
+    aspect-ratio: 0.99;
+    object-fit: auto;
+    object-position: center;
+    width: 73px;
+  }
+  

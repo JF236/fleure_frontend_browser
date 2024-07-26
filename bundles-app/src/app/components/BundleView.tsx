@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../css/ImageSection.module.css';
+import styles from '../css/BundleView.module.css';
 
-const ImageSection: React.FC = () => {
+const BundleView: React.FC = () => {
   return (
     <section className={styles.imageContainer}>
       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/98e4c6a00fe5d84bf5a87585c774882ac2563719c084003cd47a7b774440613e?apiKey=1424e7cdf45c498b85d60a28784c94fd&" className={styles.backgroundImage} alt="Background" />
@@ -23,4 +23,4 @@ const ImageSection: React.FC = () => {
   );
 };
 
-export default ImageSection;
+export default BundleView;

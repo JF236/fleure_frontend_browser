@@ -1,0 +1,41 @@
+.container {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(250, 240, 230, 0.55);
+    display: flex;
+    padding-top: 42px;
+    flex-direction: column;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden
+  }
+
+  .mainContent {
+    background-color: #fbf7f3;
+    margin-top: 22px;
+    width: 100%;
+    padding: 0 0 37px 20px;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      max-width: 100%;
+    }
+  }
+  
+  .contentWrapper {
+    gap: 20px;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 991px) {
+    .contentWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+
+  

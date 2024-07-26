@@ -1,23 +1,28 @@
 import React from 'react';
-import styles from '../fleurepage.module.css';
+import styles from '../css/MainPage.module.css';
+import leftStyles from '../css/LeftMenu.module.css';
 import Header from './Header';
-import CategorySection from './CategorySection';
+import LeftMenu from './LeftMenu';
 import ImageSection from './ImageSection';
-import SideColumn from './SideColumn';
+import BundleGallery from './BundleGallery';
+import BundleView from './BundleView';
 
 const FleurePage: React.FC = () => {
+  //hardcoded items list
+  const items = Array.from({ length: 108 }, (_, index) => <BundleView key={index} />);
   return (
     <div className={styles.container}>
       <Header />
       <main className={styles.mainContent}>
         <div className={styles.contentWrapper}>
-          <div className={styles.leftColumn}>
-            <div className={styles.leftColumnContent}>
-              <CategorySection />
+          <div className={leftStyles.leftColumn}>
+            <div className={leftStyles.leftColumnContent}>
+              <LeftMenu />
+              <ImageSection />
               <ImageSection />
             </div>
           </div>
-          <SideColumn />
+          <BundleGallery items={[items]} />
         </div>
       </main>
     </div>
